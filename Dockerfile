@@ -31,7 +31,7 @@ RUN curl https://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.z
 RUN chmod +x /usr/local/bin/chromedriver
 
 # Install selenium python webdriver library
-pip install -U selenium
+RUN pip install -U selenium
 
 RUN docker-php-ext-install mbstring mcrypt \
 curl json  gd xml zip \
