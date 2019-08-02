@@ -18,7 +18,8 @@ libbz2-dev libgmp3-dev libldap2-dev \
 unixodbc-dev libsqlite3-dev libaspell-dev \
 libsnmp-dev libpcre3-dev libtidy-dev mysql-client \
 python-pip libasound2 libnspr4 libnss3 libxss1 \
-xdg-utils unzip libappindicator1 fonts-liberation
+xdg-utils unzip libappindicator1 fonts-liberation \
+python3
 
 # Install chrome for Selenium
 RUN curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o /chrome.deb
