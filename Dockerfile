@@ -17,7 +17,7 @@ libfreetype6-dev libxml2-dev libexpat1-dev \
 libbz2-dev libgmp3-dev libldap2-dev \
 unixodbc-dev libsqlite3-dev libaspell-dev \
 libsnmp-dev libpcre3-dev libtidy-dev mysql-client \
-python-pip libasound2 libnspr4 libnss3 libxss1 \
+python3-pip libasound2 libnspr4 libnss3 libxss1 \
 xdg-utils unzip libappindicator1 fonts-liberation \
 python3
 
@@ -31,7 +31,7 @@ RUN curl https://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.z
 RUN chmod +x /usr/local/bin/chromedriver
 
 # Install selenium python webdriver library
-RUN pip install -U selenium
+RUN pip3 install selenium 
 
 RUN docker-php-ext-install mbstring mcrypt \
 curl json  gd xml zip \
