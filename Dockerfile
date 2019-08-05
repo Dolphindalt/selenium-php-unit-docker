@@ -9,7 +9,7 @@ RUN echo "deb [check-valid-until=no] http://archive.debian.org/debian jessie-bac
 RUN sed -i '/deb http:\/\/deb.debian.org\/debian jessie-updates main/d' /etc/apt/sources.list
 RUN apt-get -o Acquire::Check-Valid-Until=false update -yqq
 
-RUN apt-get install -yqq git \
+RUN apt-get install -yqq git wget \
 libmcrypt-dev libpq-dev libcurl4-gnutls-dev \
 libicu-dev libvpx-dev libjpeg-dev \
 libpng-dev libxpm-dev zlib1g-dev \
