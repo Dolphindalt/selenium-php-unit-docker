@@ -19,16 +19,7 @@ unixodbc-dev libsqlite3-dev libaspell-dev \
 libsnmp-dev libpcre3-dev libtidy-dev mysql-client \
 python3-pip libasound2 libnspr4 libnss3 libxss1 \
 xdg-utils unzip libappindicator1 fonts-liberation \
-python3
-
-# Install chrome for Selenium
-RUN curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o /chrome.deb
-RUN dpkg -i /chrome.deb || apt-get install -yf
-RUN rm /chrome.deb
-
-# Install chrome driver for Selenium
-RUN curl https://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.zip -o /usr/local/bin/chromedriver
-RUN chmod +x /usr/local/bin/chromedriver
+python3 google-chrome-stable chromedriver
 
 # Install selenium python webdriver library
 RUN pip3 install selenium 
