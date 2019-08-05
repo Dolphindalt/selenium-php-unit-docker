@@ -19,7 +19,8 @@ unixodbc-dev libsqlite3-dev libaspell-dev \
 libsnmp-dev libpcre3-dev libtidy-dev mysql-client \
 python3-pip libasound2 libnspr4 libnss3 libxss1 \
 xdg-utils unzip libappindicator1 fonts-liberation \
-python3
+python3 libappindicator3-1 libatk-bridge2.0-0 \
+libatspi2.0-0 libgtk-3-0 lsb-release
 
 # Install chrome
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
