@@ -20,7 +20,7 @@ libsnmp-dev libpcre3-dev libtidy-dev mysql-client \
 python3-pip libasound2 libnspr4 libnss3 libxss1 \
 xdg-utils unzip libappindicator1 fonts-liberation \
 python3 libappindicator3-1 libatk-bridge2.0-0 \
-libatspi2.0-0 libgtk-3-0 lsb-release python-urllib3
+libatspi2.0-0 libgtk-3-0 lsb-release
 
 # Install chrome
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -35,7 +35,7 @@ RUN chown root:root /usr/bin/chromedriver
 RUN chmod +x /usr/bin/chromedriver
 
 # Install selenium python webdriver library
-RUN pip3 install urllib3
+RUN pip3 install --upgrade --ignore-installed urllib3
 RUN pip3 install selenium 
 
 RUN docker-php-ext-install mbstring mcrypt \
